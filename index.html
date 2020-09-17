@@ -388,7 +388,7 @@
             <input type="email" name="email" placeholder="E-mail" />
             <button type="submit" class="followbutt">
               Подписаться<svg class="followmedia" width="24px" height="24px">
-                <use href="./img/symbol1-defs.svg#icon-iconsend"></use>
+                <use href="./img/symbol-defs.svg#icon-iconsend"></use>
               </svg>
             </button>
           </div>
@@ -398,23 +398,36 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modalbut" data-modal-close></button>
+        <button class="modalbut" data-modal-close>
+          <svg class="modalbut-icon" width="11px" height="11px">
+            <use href="./img/symbol-defs.svg#icon-x"></use>
+          </svg>
+        </button>
 
         <form class="form">
           <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
           <div class="form-group">
             <label for="name">Имя</label>
-            <input type="text" name="name" id="name" />
+            <input type="text" name="name" id="name" class="form-input" />
+            <svg class="modal-icon" width="12px" height="12px">
+              <use href="./img/symbol-defs.svg#icon-name"></use>
+            </svg>
           </div>
 
           <div class="form-group">
             <label for="tel">Телефон</label>
-            <input type="tel" name="tel" id="tel" />
+            <input type="tel" name="tel" id="tel" class="form-input" />
+            <svg class="modal-icon" width="13px" height="13px">
+              <use href="./img/symbol-defs.svg#icon-call"></use>
+            </svg>
           </div>
 
           <div class="form-group">
             <label for="email">Почта</label>
-            <input type="email" name="email" id="email" />
+            <input type="email" name="email" id="email" class="form-input" />
+            <svg class="modal-icon" width="15px" height="12px">
+              <use href="./img/symbol-defs.svg#icon-mailto"></use>
+            </svg>
           </div>
 
           <div class="form-group comment">
@@ -427,7 +440,8 @@
           </div>
 
           <div class="form-policy">
-            <input type="checkbox" name="policy" id="policy" />
+            <input type="checkbox" name="policy" id="policy" class="checkbox" />
+
             <label for="policy"
               >Соглашаюсь с рассылкой и принимаю
               <a href="">Условия договора</a></label
